@@ -1,0 +1,9 @@
+@startuml
+class ArticleCategoryEntity {
+    + Id : int <<get>> <<set>>
+    + CategoryName : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+ArticleCategoryEntity o-> "Articles<ArticleEntity>" "ICollection`1"
+@enduml

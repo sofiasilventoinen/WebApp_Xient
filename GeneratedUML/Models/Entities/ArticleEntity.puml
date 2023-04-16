@@ -1,0 +1,11 @@
+@startuml
+class ArticleEntity {
+    + Id : int <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + ArticleCategoryId : int <<get>> <<set>>
+    + Category : ArticleCategoryEntity? <<get>> <<set>>
+}
+ArticleEntity --> "Skapad" DateTime
+ArticleEntity --> "Uppdaterad" DateTime
+@enduml

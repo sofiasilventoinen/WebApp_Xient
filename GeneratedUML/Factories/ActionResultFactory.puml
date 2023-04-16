@@ -1,0 +1,5 @@
+@startuml
+class ActionResultFactory {
+    + {static} CreateOkResult() : OkResult
+}
+@enduml

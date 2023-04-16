@@ -1,0 +1,8 @@
+@startuml
+class ArticleRequest {
+    + Title : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + ArticleCategoryId : int <<get>> <<set>>
+    + CategoryName : string <<get>> <<set>>
+}
+@enduml

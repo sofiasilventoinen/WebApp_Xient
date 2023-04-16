@@ -1,0 +1,10 @@
+@startuml
+class ArticleContext {
+    + ArticleContext(options:DbContextOptions <ArticleContext>)
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- ArticleContext
+ArticleContext --> "Articles<ArticleEntity>" "DbSet`1"
+ArticleContext --> "Categories<ArticleCategoryEntity>" "DbSet`1"
+@enduml

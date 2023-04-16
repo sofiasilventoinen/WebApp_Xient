@@ -1,0 +1,5 @@
+@startuml
+class _1 <<partial>> {
+    # <<override>> BuildTargetModel(modelBuilder:ModelBuilder) : void
+}
+@enduml

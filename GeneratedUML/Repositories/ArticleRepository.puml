@@ -1,0 +1,10 @@
+@startuml
+class ArticleRepository {
+    + ArticleRepository(context:ArticleContext)
+    + <<async>> CreateAsync(entity:ArticleEntity) : Task<IActionResult>
+    + <<async>> RemoveArticle(id:int) : Task <IActionResult>
+    + <<async>> Get(id:int) : Task <ArticleEntity>
+    + <<async>> GetAll() : Task<IEnumerable<ArticleEntity>>
+}
+ArticleRepository --> "_context" ArticleContext
+@enduml

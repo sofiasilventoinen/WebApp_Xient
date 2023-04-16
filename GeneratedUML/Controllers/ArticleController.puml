@@ -1,0 +1,12 @@
+@startuml
+class ArticleController {
+    + ArticleController(articleService:ArticleService)
+    + <<async>> CreateAsync(req:ArticleRequest) : Task<IActionResult>
+    + <<async>> RemoveArticle(id:int) : Task <IActionResult>
+    + Update(id:int, value:string) : void
+    + <<async>> GetAll() : Task<IActionResult>
+    + <<async>> Get(id:int) : Task <IActionResult>
+}
+ControllerBase <|-- ArticleController
+ArticleController --> "_articleService" ArticleService
+@enduml

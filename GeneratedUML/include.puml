@@ -1,0 +1,23 @@
+@startuml
+!include .\\Program.puml
+!include .\\Contexts\ArticleContext.puml
+!include .\\Controllers\ArticleController.puml
+!include .\\DTO\ArticleRequest.puml
+!include .\\DTO\ArticleResponse.puml
+!include .\\Factories\ActionResultFactory.puml
+!include .\\Migrations\20230411084710_Create Article Table.puml
+!include .\\Migrations\20230411084710_Create Article Table.Designer.puml
+!include .\\Migrations\20230411085354_Create ArticleCategory Table.puml
+!include .\\Migrations\20230411085354_Create ArticleCategory Table.Designer.puml
+!include .\\Migrations\20230411102521_1.puml
+!include .\\Migrations\20230411102521_1.Designer.puml
+!include .\\Migrations\ArticleContextModelSnapshot.puml
+!include .\\Repositories\ArticleRepository.puml
+!include .\\Services\ArticleService.puml
+!include .\\Models\Entities\ArticleCategoryEntity.puml
+!include .\\Models\Entities\ArticleEntity.puml
+!include .\\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net7.0\WebApp_Xient.AssemblyInfo.puml
+!include .\\obj\Debug\net7.0\WebApp_Xient.GlobalUsings.g.puml
+!include .\\obj\Debug\net7.0\WebApp_Xient.MvcApplicationPartsAssemblyInfo.puml
+@enduml
